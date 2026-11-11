@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    url: jdbc:h2:file:./data/colegio
+    driver-class-name: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update # Solo desarrollo. En produccion use migraciones Flyway/Liquibase.
+
+# Datos ficticios de demostracion (no usar con estudiantes reales).
+app:
+  demo:
+    enabled: ${APP_DEMO_ENABLED:true}
