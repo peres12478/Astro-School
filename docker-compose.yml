@@ -1,0 +1,20 @@
+services:
+  mailpit:
+    image: axllent/mailpit:latest
+    ports:
+      - "127.0.0.1:1025:1025" # SMTP de pruebas
+      - "127.0.0.1:8025:8025" # Bandeja de entrada de pruebas
+  mysql:
+    image: mysql:8.4
+    profiles: [mysql]
+    environment:
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-solo_desarrollo_cambiar}
+      MYSQL_DATABASE: colegio
+      MYSQL_USER: colegio
+      MYSQL_PASSWORD: ${MYSQL_APP_PASSWORD:-solo_desarrollo_cambiar}
+    ports:
+      - "127.0.0.1:3306:3306"
+    volumes:
+      - mysql_escolar:/var/lib/mysql
+volumes:
+  mysql_escolar:
