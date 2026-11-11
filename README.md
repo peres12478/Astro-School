@@ -1,5 +1,8 @@
 # Astro School 3.0 — Laboratorios y Nuestras creaciones
 
+**Tarea Realizada por Miguel Ángel Pérez García**
+
+
 **Astro School** amplía el proyecto escolar original. Conserva sus APIs REST para autenticación, profesores, estudiantes, notas, QR, tareas y clases virtuales. Añade una interfaz con identidad visual espacial, un noticiero comunitario con archivos, tres cursos optativos, laboratorios propios y la galería pública **Nuestras creaciones**. **Swagger no fue eliminado**: las funciones se organizan por secciones y siguen accesibles en `/swagger-ui.html`.
 
 ## Empezar en Windows
